@@ -1,0 +1,18 @@
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Thumbs.db
+
+*.log
+*.svn
+.svn
+.svn/entries
+
+# Ignore DEV-Dependencies
+
+foyer-api/node_modules/neo4j-test
+foyer-api/node_modules/.bin/neo4j-test
+foyer-api/node_modules/mocha
+foyer-api/node_modules/should
+foyer-api/node_modules/supertest

@@ -1,0 +1,23 @@
+{
+	"apps" : [
+		{
+			"name" 				: "wib-webhook",
+			"script"			: "/var/www/wib-bot/wib-webhook/index.js",
+			"instances"  		: "max",
+			"watch"       		: true,
+			"node_args"   		: "--harmony",
+			"log_date_format"	: "YYYY-MM-DD HH:mm Z",
+			"env": {
+				"NODE_ENV": "production"
+			}
+		},
+		{
+			"name" 				: "git-webhook",
+			"script"			: "/var/www/wib-bot/git-webhook/hook.js",
+			"watch"       		: true,
+			"env": {
+				"NODE_ENV": "development"
+			}
+		}
+	]
+}

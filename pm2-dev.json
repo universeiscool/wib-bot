@@ -1,0 +1,22 @@
+{
+	"apps" : [
+		{
+			"name" 				: "wib-webhook",
+			"script"			: "wib-webhook/index.js",
+			"watch"       		: true,
+			"node_args"   		: "--harmony",
+			"log_date_format"	: "YYYY-MM-DD HH:mm Z",
+			"env": {
+				"NODE_ENV": "development"
+			}
+		},
+		{
+			"name" 				: "git-webhook",
+			"script"			: "git-webhook/hook.js",
+			"watch"       		: true,
+			"env": {
+				"NODE_ENV": "development"
+			}
+		}
+	]
+}

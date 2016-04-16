@@ -1,0 +1,13 @@
+{
+  "name": "FoyerAPIWebHook",
+  "version": "0.0.1",
+  "repository": "mschonvogel/foyer-backend",
+  "description": "Public API for Foyer Apps",
+  "keywords": [
+    "foyer",
+    "api"
+  ],
+  "dependencies": {
+    "github-webhook-handler": "*"
+  }
+}
